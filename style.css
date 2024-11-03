@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+.nav{
+   text-align: center;
+   display: flex;
+   gap: 10px;
+   color: #000;
+   padding: 10px;
+   /* margin: 10px; */
+}
+.nav a{
+    text-decoration: none;
+    color: #000;
+}
+.mail:hover,.image:hover{
+    text-decoration: underline;
+}
+.apps:hover,.flask:hover,.person:hover{
+    background-color: gray;
+    border-radius: 40%;
+}
+@media screen and (width >= 700px){
+    .nav{
+        gap:20px;
+        font-size: 1.5rem;
+    }
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 10px;
+}
+#google-logo{
+    /* border: 2px solid; */
+    width: 100px;
+
+}
+@media screen and (width >= 700px){
+    #google-logo{
+        width: 200px;
+    }
+}
+.search{
+    display: flex;
+    /* border: 2px solid gray; */
+    flex-direction: row;
+    /* justify-content: space-between; */
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px gray;
+    width: 80vw;
+    height: 5vh;
+}
+.input{
+    border: none;
+    font-size: 10px;
+    width: 70%;
+}
+.input:focus{
+    outline: none;
+}
+.search-icon,.lens{
+    margin: 10px;
+}
+.audio{
+    margin: 5px;
+}
+@media screen and (width >= 450px){
+    .search{
+        width: 60vw;
+        height: 10vh;
+        /* justify-content: space-between; */
+        gap:10px;
+    }
+    .input{
+        font-size: 20px;
+    }
+    .search-icon,.lens,.audio{
+        font-size: 1.5rem;
+        margin: 20px;
+    }
+}
+.plus{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    font-size: 1.5rem;
+}
+
